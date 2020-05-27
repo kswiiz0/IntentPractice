@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="10dp"
+    android:background="#FFCC66"
     tools:context=".FirstActivity">
 
     <TextView
@@ -15,6 +16,7 @@
         android:textSize="25sp"
         android:text="첫번째 액티비티"/>
     <Button
+        android:id="@+id/goBackBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"

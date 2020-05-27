@@ -5,18 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10"
+    android:padding="10dp"
     android:gravity="center"
     android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/goToFirstBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="1번 액티비티로 이동"
         />
 
     <Button
+        android:id="@+id/goToSecondBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="2번 액티비티로 이동"
