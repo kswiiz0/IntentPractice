@@ -16,13 +16,21 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
 
         }
-
-
         goToSecondBtn.setOnClickListener {
             val myIntent = Intent(this, SecondActivity::class.java )
             startActivity(myIntent)
 
         }
+
+        goToThirdBtn.setOnClickListener {
+            val myIntent = Intent(this, ThirdActivity::class.java )
+            myIntent.putExtra("contentEdt", contentEdt.text.toString())
+            myIntent.putExtra("num", 10)
+            startActivity(myIntent)
+
+        }
+
+
 
     }
 }
