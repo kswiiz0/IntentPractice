@@ -13,7 +13,7 @@ class FourthActivity : AppCompatActivity() {
         setContentView(R.layout.activity_fourth)
 
 
-        goBackMessage.setOnClickListener {
+        goToBackBtn.setOnClickListener {
 
             val input = goBackMessage.text.toString()
             val goBackIntent = Intent()
