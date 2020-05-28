@@ -3,7 +3,6 @@ package com.phis.intentpractice
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_fourth.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.contentEdt
 
@@ -34,8 +33,7 @@ class MainActivity : AppCompatActivity() {
 
         goToForthBtn.setOnClickListener {
             val myIntent = Intent(this, FourthActivity::class.java)
-            myIntent.putExtras(intent)
-            startActivity(myIntent)
+            startActivityForResult(myIntent, 1000)
 
 
         }
