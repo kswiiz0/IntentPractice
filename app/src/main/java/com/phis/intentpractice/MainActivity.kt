@@ -3,7 +3,9 @@ package com.phis.intentpractice
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_fourth.*
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main.contentEdt
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,6 +29,14 @@ class MainActivity : AppCompatActivity() {
             myIntent.putExtra("contentEdt", contentEdt.text.toString())
             myIntent.putExtra("num", 10)
             startActivity(myIntent)
+
+        }
+
+        goToForthBtn.setOnClickListener {
+            val myIntent = Intent(this, FourthActivity::class.java)
+            myIntent.putExtras(intent)
+            startActivity(myIntent)
+
 
         }
 

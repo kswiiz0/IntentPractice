@@ -41,5 +41,23 @@
         />
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="4번에서 입력한 내용"
+        />
+
+    <Button
+        android:id="@+id/goToFourthBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4번 액티비티로 이동"
+        />
+
+
+
+
+
 
 </LinearLayout>
